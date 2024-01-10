@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RulzzML Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./channels4_profile.jpg">
+    <script src="https://kit.fontawesome.com/ce0ff88187.js"></script> 
+</head>
+<body>
+    <!-- Home -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="./channels4_profile.jpg" alt="">
+                    <div class="logo-text">RulzzML</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="https://saweria.co/RulzzML">Gift</a></li>
+                        <li><a href="mailto:khoirullanam0411@gmail.com">Contact</a></li>
+                        <li><p>V 2.5.9</p></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container" id="home">
+                <div class="hero-pic">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <div class="hero-text">
+                    <h5>Hallo, Saya seorang <span class="">Konten Kreator</span></h5>
+                    <h1>RulzzML</h1>
+                    <p>RulzzML adalah konten kreator dari platfrom Youtube yang berasal dari negara Indonesia.</p>
+                    <div class="btn-group">
+                        <a href="#service" class="btn active">Lihat Lebih Banyak</a>
+                        <a href="#" class="btn active">Lihat Channel</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.youtube.com/@bangrulzz44"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="mailto:khoirullanam0411@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.saweria.co/RulzzML"><i class="fa-solid fa-gift"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service section -->
+    <div class="container2" id="service">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1>Saya Seorang:<span></span></h1>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>Pengembang Website</h2>
+                        <p>RulzzML menyediakan layanan pembuatan website. Jika Anda ingin menyewa jasa saya, Anda bisa klik <a href="">di sini</a></p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-youtube"></i>
+                        <h2>Konten Kreator</h2>
+                        <p>RulzzML adalah konten kreator asal Indonesia yang sekarang mempunyai  2,62RB Subscriber</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-pen"></i>
+                        <h2>Pelajar</h2>
+                        <p>RulzzML masih berstatus mahasiswa dikarenakan admin dari Rulzz itu seorang BOCIL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="social">
+            <a href="https://www.youtube.com/@bangrulzz44"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/rulzzmlgc"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <div class="link">
+            <a href="#">Home</a>
+            <a href="#service">Service</a>
+            <a href="https://www.saweria.co/RulzzML">Gift</a>
+            <a href="mailto:khoirullanam0411@gmail.com">Contact</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="#">Rulzz </a>&copy; 2023</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+</body>
+</html>
