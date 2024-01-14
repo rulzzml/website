@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy - RulzzML</title>
+    <link rel="stylesheet" href="./privacy.css">
+    <link rel="icon" href="./channels4_profile.jpg">
+    <script src="https://kit.fontawesome.com/ce0ff88187.js"></script>
+</head>
+<body>
+
+    <div class="popup-screen">
+        <div class="popup-box">
+            <i class="fas fa-times close-btn"></i>
+            <h2>Privacy - RulzzML</h2>
+            <p>Dukung terus channel RulzzML agar terus berkembang dengan cara subscribe channel RulzzML dengan mengklik tulisan di bawah</p>
+            <a href="https://www.youtube.com/@bangrulzz44" class="btn">Subscribe</a>
+        </div>
+    </div>
+
+ <!-- service section -->
+ <div class="container2" id="service">
+    <div class="service-wrapper">
+        <div class="service">
+            <h1>Privacy - RulzzML<span></span></h1>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>End to end</h2>
+                    <p>RulzzML menyediakan layanan pembuatan website. Jika Anda ingin menyewa jasa saya, Anda bisa klik <a href="">di sini</a></p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h2>Konten Kreator</h2>
+                    <p>RulzzML adalah konten kreator asal Indonesia yang sekarang mempunyai  2,62RB Subscriber</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Pelajar</h2>
+                    <p>RulzzML masih berstatus mahasiswa dikarenakan admin dari Rulzz itu seorang BOCIL.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script type="text/javascript">
+    const popupScreen = document.querySelector(".popup-screen");
+    const popupBox = document.querySelector(".popup-box");
+    const closeBtn = document.querySelector(".close-btn");
+
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            popupScreen.classList.add("active");
+        }, 6000);
+    });
+
+closeBtn.addEventListener("click", () => {
+    popupScreen.classList.remove("active");
+
+    document.cookie = "RulzzML - Website=PersonalWeb; max-age=" + 24 * 60 *60;
+});
+
+
+const WebsiteCookie = document.cookie.indexOf("RulzzML - Website");
+
+if(
+    WebsiteCookie != -1){
+        popupScreen.style.display = "none";
+    }
+    else{
+        popupScreen.style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>
