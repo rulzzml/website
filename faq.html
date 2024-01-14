@@ -6,8 +6,18 @@
     <title>FAQ - RulzzML</title>
     <link rel="icon" href="./channels4_profile.jpg">
     <link rel="stylesheet" href="./faq.css">
+    <script src="https://kit.fontawesome.com/ce0ff88187.js"></script>
 </head>
 <body>
+    <div class="popup-screen">
+        <div class="popup-box">
+            <i class="fas fa-times close-btn"></i>
+            <h2>FAQ - RulzzML</h2>
+            <p>Dukung terus channel RulzzML agar terus berkembang dengan cara subscribe channel RulzzML dengan mengklik tulisan di bawah</p>
+            <a href="https://www.youtube.com/@bangrulzz44" class="btn">Subscribe</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="judul">
             <img src="./channels4_profile.jpg" alt="">
@@ -35,5 +45,35 @@
         </div>
         <a href="./index.html">Balik ke halaman sebelumnya</a>
     </div>
+
+    
+  <script type="text/javascript">
+    const popupScreen = document.querySelector(".popup-screen");
+    const popupBox = document.querySelector(".popup-box");
+    const closeBtn = document.querySelector(".close-btn");
+
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            popupScreen.classList.add("active");
+        }, 4000);
+    });
+
+closeBtn.addEventListener("click", () => {
+    popupScreen.classList.remove("active");
+
+    document.cookie = "RulzzML - Website=PersonalWeb; max-age=" + 24 * 60 *60;
+});
+
+
+const WebsiteCookie = document.cookie.indexOf("RulzzML - Website");
+
+if(
+    WebsiteCookie != -1){
+        popupScreen.style.display = "none";
+    }
+    else{
+        popupScreen.style.display = "flex";
+    }
+  </script>
 </body>
 </html>
