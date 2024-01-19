@@ -3,114 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RulzzML Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>RulzzML - Website</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./channels4_profile.jpg">
-    <script src="https://kit.fontawesome.com/ce0ff88187.js"></script> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- Home -->
-    <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <img src="./channels4_profile.jpg" alt="">
-                    <div class="logo-text">RulzzML</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#service">I am a</a></li>
-                        <li><a href="https://saweria.co/RulzzML">Gift</a></li>
-                        <li><a href="mailto:khoirullanam0411@gmail.com">Contact</a></li>
-                        <li><p>V 2.5.9</p></li>
-                    </ul>
-                </nav>
-            </header>
+    <div class="popup-screen">
+        <div class="popup-box">
+            <i class='bx bx-window-close close-btn'></i>
+            <h2>FAQ - RulzzML</h2>
+            <p>Dukung terus channel RulzzML agar terus berkembang dengan cara subscribe channel RulzzML dengan mengklik tulisan di bawah</p>
+            <a href="https://www.youtube.com/@bangrulzz44" class="btn">Subscribe</a>
+        </div>
+    </div>
+    
+    <div class="header">
+        <a href="#" class="logo">RulzzML <span class="animate" style="--i:1;"></span></a>
 
-            <div class="container" id="home">
-                <div class="hero-pic">
-                    <img src="img1.jpg" alt="">
-                </div>
-                <div class="hero-text">
-                    <h5>Hallo, Saya seorang <span class="">Konten Kreator</span></h5>
-                    <h1>RulzzML</h1>
-                    <p>RulzzML adalah konten kreator dari platfrom Youtube yang berasal dari negara Indonesia.</p>
-                    <div class="btn-group">
-                        <a href="https://www.youtube.com/@bangrulzz44" class="btn active">Lihat Channel</a>
-                        <a href="#service" class="btn active">I am a</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="bx bx-menu"></i></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills +</a>
+                
+                    <ul>
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                    </ul></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </div>
+
+    <div class="poto">
+        <img src="./channels4_profile.jpg" alt="">
+        <span class="circle-spin"></span>
+    </div>
+
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hallo, saya <span>RulzzML</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Fronted Developer</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque obcaecati eos ratione et delectus consequuntur explicabo debitis libero in.
+                <span class="animate" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box">
+                <a href="https://www.youtube.com/@bangrulzz44" class="btn">Subscribe</a>
+                <a href="#about" class="btn">About</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <span class="animate" style="--i:5;"></span>
+        </div>
+    </section>
+
+    <div class="about" id="about">
+        <h2 class="heading">About <span>Me</span>
+            <span class="animate scroll" style="--i:1;"></span></h2>
+        <div class="about-img">
+            <img src="./channels4_profile.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Fronted Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iusto atque eligendi quidem doloribus eius natus voluptates, cumque, molestiae nihil maiores at molestias. Ipsum quas earum illo at hic itaque?</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+           </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2018</div>
+                            <h3>Master Degree</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate aspernatur obcaecati similique id mollitia, excepturi doloribus quisquam nobis cumque?</p>
+                        </div>
                     </div>
 
-                    <div class="social">
-                        <a href="https://www.youtube.com/@bangrulzz44"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="mailto:khoirullanam0411@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://www.saweria.co/RulzzML"><i class="fa-solid fa-gift"></i></a>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2018</div>
+                            <h3>Master Degree</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate aspernatur obcaecati similique id mollitia, excepturi doloribus quisquam nobis cumque?</p>
+                        </div>
+                    </div>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2018</div>
+                            <h3>Master Degree</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate aspernatur obcaecati similique id mollitia, excepturi doloribus quisquam nobis cumque?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Cooding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>98%</span></h3>
+                            <div class="bar html"><span></span></div>
+                        <div class="progress">
+                            <h3>CSS <span>95%</span></h3>
+                            <div class="bar css"><span></span></div>
+                        <div class="progress">
+                            <h3>JS <span>15%</span></h3>
+                            <div class="bar js"><span></span></div>
+                        <div class="progress">
+                            <h3>PYTHON <span>0%</span></h3>
+                            <div class="bar php"><span></span></div>
+                        <div class="progress">
+                            <h3>PHP <span>0%</span></h3>
+                            <div class="bar php"><span></span></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- service section -->
-    <div class="container2" id="service">
-        <div class="service-wrapper">
-            <div class="service">
-                <h1>Saya Seorang:<span></span></h1>
-                <div class="cards">
-                    <div class="card">
-                        <i class="fa-solid fa-globe"></i>
-                        <h2>Pengembang Website</h2>
-                        <p>RulzzML menyediakan layanan pembuatan website. Jika Anda ingin menyewa jasa saya, Anda bisa klik <a href="">di sini</a></p>
-                    </div>
-                    <div class="card">
-                        <i class="fa-brands fa-youtube"></i>
-                        <h2>Konten Kreator</h2>
-                        <p>RulzzML adalah konten kreator asal Indonesia yang sekarang mempunyai  2,62RB Subscriber</p>
-                    </div>
-                    <div class="card">
-                        <i class="fa-solid fa-pen"></i>
-                        <h2>Pelajar</h2>
-                        <p>RulzzML masih berstatus mahasiswa dikarenakan admin dari Rulzz itu seorang BOCIL.</p>
-                    </div>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nama anda" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nomor anda" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Pesan anda" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
 
 
     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 RulzzML | All Right Reserved</p>
+        </div>
 
-    <footer>
-        <div class="social">
-            <a href="https://www.youtube.com/@bangrulzz44"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://t.me/rulzzmlgc"><i class="fa-brands fa-telegram"></i></a>
-        </div>
-        <div class="link">
-            <a href="faq.html">FAQ</a>
-            <a href="#service">Privacy</a>
-        </div>
-        <div class="credit">
-            <p>Copyright <a href="#">Rulzz </a>&copy; 2023</p>
+        <div class="footer-icontop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
 
 
-
-    <script>
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
-        var links = document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
