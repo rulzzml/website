@@ -81,6 +81,9 @@ position: relative;
 .header .navbar ul li:hover > ul{
     display: initial;
 }
+.header .navbar .down{
+    font-size: 17px;
+}
 #menu-bar{
     position: relative;
     display: none;
@@ -627,15 +630,17 @@ span{
         border-radius: 50%;
         justify-content: center;
         align-items: center;
-        margin-top: 1.3rem;
+        margin-right: 15%;
     }
     .poto img{
         width: 90%;
         border-radius: 50%;
         border: .2rem solid var(--main-color);
+        width: 250px;
+        height: 25rem;
     }
     .poto .circle-spin{
-        position: absolute;
+        /* position: absolute;
         top: 45%;
         left: 45%;
         transform: translate(-50%, -50%) rotate(0);
@@ -646,12 +651,13 @@ span{
         border-bottom: .2rem solid var(--second-bg-color);
         border-left: .4rem solid var(--main-color);
         border-right: .4rem solid var(--main-color);
-        animation: aboutSpinner 8s linear infinite;
+        animation: aboutSpinner 8s linear infinite; */
+        display: none;
     }
 }
 @media (max-width: 520px){
     html{
-        font-size: 55%;
+        font-size: 65%;
     }
     .home-content h1{
         display: flex;
