@@ -478,9 +478,18 @@ span{
     width: 95%;
 }
 .skills-content .progress .bar.js{
-    width: 20%;
+    width: 5%;
+}
+.skills-content .progress .bar.python{
+    width: 2%;
 }
 .skills-content .progress .bar.php{
+    width: 2%;
+}
+.skills-content .progress .bar.ruby{
+    width: 2%;
+}
+.skills-content .progress .bar.nextjs{
     width: 2%;
 }
 
@@ -559,7 +568,7 @@ span{
     overflow: hidden;
 }
 .footer-icontop a i{
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: var(--bg-color);
     transition: .5s;
 }
@@ -622,15 +631,6 @@ span{
     }
     #menu-bar:checked ~ .navbar{
         display: initial;
-    }
-    .poto{
-        position: relative;
-        width: 25rem;
-        height: 25rem;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15%;
     }
     .poto img{
         display: none;
@@ -809,3 +809,6 @@ span{
     opacity: 1;
     color: red;
 }
+
+
+/* Ganti background */
