@@ -5,7 +5,7 @@ const popupScreen = document.querySelector(".popup-screen");
     window.addEventListener("load", () => {
         setTimeout(() => {
             popupScreen.classList.add("active");
-        }, 4000);
+        }, 8000);
     });
 
 closeBtn.addEventListener("click", () => {
@@ -24,3 +24,7 @@ if(
     else{
         popupScreen.style.display = "flex";
     }
+
+function notfound(){
+    alert('Form belum bisa digunakan, akan kami update secepatnya. Versi saat ini 2.1.3')
+};
