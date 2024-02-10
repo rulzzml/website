@@ -590,6 +590,131 @@ span{
     color: var(--main-color);
 }
 
+
+/* /Tulisan konten kreator */
+@keyframes homeBgText{
+    0%,
+    10%,
+    100%{
+        background-position: -33rem 0;
+    }
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+@keyframes homeCursorText{
+    0%,
+    10%,
+    100%{
+        width: 0;
+    }
+    65%,
+    78%,
+    85%{
+        width: 100%;
+        opacity: 1;
+    }
+    75%,
+    81%{
+        opacity: 0;
+    }
+}
+
+/* Foto Animation Spinner */
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Reload */
+@keyframes showRight{
+    100%{
+        width: 100%;
+    }
+}
+
+
+/* Pop Up */
+.popup-screen{
+    z-index: 9999;
+    position: fixed;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s ease;
+    transition-property: visibility;
+}
+.popup-screen.active{
+    visibility: visible;
+}
+.popup-box{
+    position: relative;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 200);
+    transform: scale(0);
+    transition: 0.5s ease;
+    transition-property: transform;
+}
+.popup-screen.active .popup-box{
+    transform: scale(1);
+}
+.popup-box h2{
+    font-size: 3.1em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+.popup-box p{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+.popup-box .btn{
+    color: #fff;
+    background: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 27px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    transition-property: opacity;
+    color: var(--main-color);
+}
+.close-btn:hover{
+    opacity: 1;
+    color: red;
+}
+
+
+/* Responsive */
 @media (max-width: 900px){
     .header{
         padding: 20px;
@@ -687,128 +812,3 @@ span{
         font-size: 5rem;
     }
 }
-@keyframes homeBgText{
-    0%,
-    10%,
-    100%{
-        background-position: -33rem 0;
-    }
-    65%,
-    85%{
-        background-position: 0 0;
-    }
-}
-@keyframes homeCursorText{
-    0%,
-    10%,
-    100%{
-        width: 0;
-    }
-    65%,
-    78%,
-    85%{
-        width: 100%;
-        opacity: 1;
-    }
-    75%,
-    81%{
-        opacity: 0;
-    }
-}
-
-/* Foto Animation Spinner */
-@keyframes aboutSpinner{
-    100%{
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-/* Reload */
-@keyframes showRight{
-    100%{
-        width: 100%;
-    }
-}
-
-
-/* Pop Up */
-
-
-.popup-screen{
-    z-index: 9999;
-    position: fixed;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    transition: 0.5s ease;
-    transition-property: visibility;
-}
-.popup-screen.active{
-    visibility: visible;
-}
-.popup-box{
-    position: relative;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    max-width: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 50px 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 25px rgb(0 0 0 / 200);
-    transform: scale(0);
-    transition: 0.5s ease;
-    transition-property: transform;
-}
-.popup-screen.active .popup-box{
-    transform: scale(1);
-}
-.popup-box h2{
-    font-size: 3.1em;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: var(--main-color);
-}
-.popup-box p{
-    font-size: 1.7em;
-    margin-bottom: 30px;
-    color: var(--main-color);
-}
-.popup-box .btn{
-    color: #fff;
-    background: red;
-    font-size: 1.1em;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 7px 27px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.close-btn{
-    position: absolute;
-    font-size: 3em;
-    top: 0;
-    right: 0;
-    margin: 15px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.5s ease;
-    transition-property: opacity;
-    color: var(--main-color);
-}
-.close-btn:hover{
-    opacity: 1;
-    color: red;
-}
-
-
-/* Ganti background */
